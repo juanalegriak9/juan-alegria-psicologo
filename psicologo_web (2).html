@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Alegría - Psicólogo Clínico Santiago | Psicoterapia Individual</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Psicólogo clínico en Santiago, Chile. Juan Alegría ofrece psicoterapia individual, evaluación psicológica y acompañamiento terapéutico para niños, adolescentes y adultos. Agenda tu consulta.">
+    <meta name="keywords" content="psicólogo Santiago, psicoterapia Santiago, psicólogo clínico Chile, terapia psicológica, evaluación psicológica, psicodiagnóstico, WISC-V, psicólogo infantil, psicólogo adolescentes, Juan Alegría psicólogo, terapia individual Santiago">
+    <meta name="author" content="Juan Miguel Alegría Garcés">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Meta tags para redes sociales (Open Graph) -->
+    <meta property="og:title" content="Juan Alegría - Psicólogo Clínico en Santiago">
+    <meta property="og:description" content="Atención psicológica profesional y personalizada. Psicoterapia individual, evaluación psicológica y acompañamiento terapéutico.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Datos estructurados para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Psychologist",
+      "name": "Juan Miguel Alegría Garcés",
+      "alternateName": "Juan Alegría",
+      "url": "https://www.tusitio.com",
+      "telephone": "+56939059232",
+      "email": "juan.alegriak9@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressCountry": "CL"
+      },
+      "areaServed": "Santiago, Chile",
+      "priceRange": "$$",
+      "description": "Psicólogo clínico especializado en psicoterapia individual, evaluación psicológica y acompañamiento terapéutico para niños, adolescentes y adultos.",
+      "serviceType": ["Psicoterapia Individual", "Evaluación Psicológica", "Acompañamiento Terapéutico", "Psicodiagnóstico"],
+      "knowsAbout": ["Psicología Clínica", "Evaluación Psicométrica", "WISC-V", "Autorregulación Emocional"]
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #764ba2;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .about-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+            color: #666;
+            text-align: justify;
+        }
+
+        .experience-timeline {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .timeline-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-item .period {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .skill-item h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-item {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            border-radius: 8px;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .services-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Juan Miguel Alegría Garcés</h1>
+                <p>Psicólogo Clínico | Psicoterapia Individual | Evaluación Psicológica</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#competencias">Competencias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenido a mi Espacio Terapéutico</h2>
+            <p>Te ofrezco un espacio seguro y profesional para tu bienestar emocional. Con enfoque empático y personalizado, acompaño procesos terapéuticos de niños, adolescentes y adultos.</p>
+            <a href="#contacto" class="cta-button">Agenda tu Consulta</a>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2 class="section-title">Servicios Profesionales</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">🧠</div>
+                    <h3>Psicoterapia Individual</h3>
+                    <p>Atención clínica personalizada para niños, adolescentes y adultos. Procesos terapéuticos enfocados en tu bienestar emocional y desarrollo personal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">📋</div>
+                    <h3>Evaluación Psicológica</h3>
+                    <p>Psicodiagnósticos completos con aplicación de pruebas psicométricas especializadas (WISC-V, entre otras) y elaboración de informes clínicos profesionales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🤝</div>
+                    <h3>Acompañamiento Terapéutico</h3>
+                    <p>Apoyo continuo en procesos de cambio y crecimiento personal. Estrategias efectivas para el manejo emocional y resolución de conflictos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">👨‍👩‍👧‍👦</div>
+                    <h3>Intervención en Contextos Educativos</h3>
+                    <p>Talleres de autorregulación emocional y gestión de conflictos. Experiencia en coordinación con equipos interdisciplinarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <p>Soy psicólogo titulado de la Universidad Autónoma de Chile, con experiencia integral en el ámbito clínico y organizacional. Mi práctica profesional se caracteriza por un <strong>enfoque empático</strong>, responsabilidad y compromiso con el bienestar de las personas.</p>
+                
+                <p>A lo largo de mi trayectoria, he desarrollado competencias en <strong>evaluación psicodiagnóstica</strong>, psicoterapia individual y acompañamiento terapéutico, trabajando con niños, adolescentes y adultos en diversos contextos.</p>
+                
+                <p>Me especializo en generar <strong>intervenciones efectivas y personalizadas</strong>, adaptadas a las necesidades únicas de cada persona. Cuento con certificación en aplicación e interpretación de pruebas psicométricas especializadas, lo que me permite ofrecer evaluaciones precisas y profesionales.</p>
+                
+                <p>Mi objetivo es proporcionar un espacio terapéutico seguro donde puedas explorar tus emociones, desarrollar herramientas para enfrentar desafíos y alcanzar tu máximo potencial de bienestar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <h3>Terapeuta Clínico Independiente</h3>
+                    <p class="period">2024 - Actualidad</p>
+                    <p>Atención clínica particular enfocada en procesos terapéuticos, evaluación psicológica y apoyo emocional a niños, adolescentes y adultos. Aplicación de pruebas psicométricas y elaboración de informes clínicos.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Clínica Psicológica Universidad Autónoma de Chile</h3>
+                    <p class="period">Marzo 2023 - Noviembre 2023</p>
+                    <p>Atención psicológica individual a usuarios de distintas edades. Realización de psicodiagnósticos, acompañamientos terapéuticos y elaboración de informes psicológicos. Participación activa en programas de intervención junto a JUNJI.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Proyecto de Intervención - JUNJI</h3>
+                    <p class="period">Julio 2023 - Octubre 2023</p>
+                    <p>Diseño e implementación de talleres sobre autorregulación emocional y gestión de conflictos en entornos educativos. Elaboración de estrategias de intervención y coordinación con equipos interdisciplinarios.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Inversiones ENEX - Área de RRHH</h3>
+                    <p class="period">Marzo 2022 - Junio 2022</p>
+                    <p>Desempeño en reclutamiento y selección de personal. Realización de entrevistas, evaluación de competencias y gestión de procesos de selección alineados con objetivos organizacionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias" style="background-color: white;">
+        <div class="container">
+            <h2 class="section-title">Competencias y Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>🎯 Evaluación e Intervención</h4>
+                    <p>Evaluación psicológica integral y diseño de intervenciones efectivas</p>
+                </div>
+                <div class="skill-item">
+                    <h4>📊 Pruebas Psicométricas</h4>
+                    <p>Aplicación e interpretación de WISC-V y otras herramientas especializadas</p>
+                </div>
+                <div class="skill-item">
+                    <h4>📝 Informes Clínicos</h4>
+                    <p>Elaboración de informes clínicos y psicodiagnósticos profesionales</p>
+                </div>
+                <div class="skill-item">
+                    <h4>💬 Comunicación Efectiva</h4>
+                    <p>Habilidades de escucha activa y comunicación empática</p>
+                </div>
+                <div class="skill-item">
+                    <h4>🤝 Trabajo en Equipo</h4>
+                    <p>Colaboración con equipos interdisciplinarios</p>
+                </div>
+                <div class="skill-item">
+                    <h4>🎨 Diseño Psicoeducativo</h4>
+                    <p>Creación de material terapéutico con Adobe Creative Cloud</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <p style="margin-bottom: 2rem; color: #666;">¿Listo para comenzar tu proceso terapéutico? Contáctame y agenda tu primera sesión.</p>
+                
+                <div class="contact-item">
+                    <strong>📞 Teléfono / WhatsApp</strong>
+                    <a href="tel:+56939059232">+56 9 3905 9232</a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>✉️ Correo Electrónico</strong>
+                    <a href="mailto:juan.alegriak9@gmail.com">juan.alegriak9@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>📍 Ubicación</strong>
+                    <p>Santiago, Chile</p>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <a href="https://wa.me/56939059232" class="cta-button" target="_blank">Escribir por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Juan Miguel Alegría Garcés - Psicólogo Clínico</p>
+            <p>Atención profesional y confidencial | Santiago, Chile</p>
+        </div>
+    </footer>
+</body>
+</html>
